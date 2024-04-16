@@ -80,6 +80,9 @@ dependencies:
   drizzle-orm:
     specifier: ^0.30.8
     version: 0.30.8(@types/better-sqlite3@7.6.9)(@types/react@18.2.79)(better-sqlite3@9.5.0)(react@18.2.0)
+  lucide-react:
+    specifier: ^0.368.0
+    version: 0.368.0(react@18.2.0)
   next:
     specifier: 14.2.1
     version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
@@ -98,6 +101,9 @@ dependencies:
   react-hook-form:
     specifier: ^7.51.3
     version: 7.51.3(react@18.2.0)
+  react-icons:
+    specifier: ^5.1.0
+    version: 5.1.0(react@18.2.0)
   react-resizable-panels:
     specifier: ^2.0.17
     version: 2.0.17(react-dom@18.2.0)(react@18.2.0)
@@ -3818,6 +3824,14 @@ packages:
       es5-ext: 0.10.64
     dev: true
 
+  /lucide-react@0.368.0(react@18.2.0):
+    resolution: {integrity: sha512-soryVrCjheZs8rbXKdINw9B8iPi5OajBJZMJ1HORig89ljcOcEokKKAgGbg3QWxSXel7JwHOfDFUdDHAKyUAMw==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /memoizee@0.4.15:
     resolution: {integrity: sha512-UBWmJpLZd5STPm7PMUlOw/TSy972M+z8gcyQ5veOnSDRREz/0bmpyTfKt3/51DhEBqCZQn1udM/5flcSPYhkdQ==}
     dependencies:
@@ -4325,6 +4339,14 @@ packages:
     engines: {node: '>=12.22.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /react-icons@5.1.0(react@18.2.0):
+    resolution: {integrity: sha512-D3zug1270S4hbSlIRJ0CUS97QE1yNNKDjzQe3HqY0aefp2CBn9VgzgES27sRR2gOvFK+0CNx/BW0ggOESp6fqQ==}
+    peerDependencies:
+      react: '*'
     dependencies:
       react: 18.2.0
     dev: false
