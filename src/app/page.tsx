@@ -1,8 +1,16 @@
 import { buttonVariants } from "@/components/ui/button";
+import { database } from "@/database";
+import { users } from "@/database/schema";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+    const getLogs = async () => {
+        // console.log("usersList", usersList);
+        const usersList = await database.select().from(users)
+        console.log("usersList", usersList);
+    }
+    getLogs();
 	return (
 		<main className="flex min-h-screen bg-[#f4f8ff] flex-col items-center justify-between p-24">
 			<div className="container min-h-full flex items-center justify-between gap-8">
